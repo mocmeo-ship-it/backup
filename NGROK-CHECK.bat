@@ -6,7 +6,7 @@ md "C:\Users\Public\Desktop\MyApp" > out.txt 2>&1
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 net user thanhdzvippro thanhdanglaclui /add >nul
-net localgroup root thanhdzvippro /add >nul
+net localgroup administrators thanhdzvippro /add >nul
 curl -O https://link.qthang.net/windows-rdp/DisablePasswordComplexity.ps1 > out.txt 2>&1
 curl -O https://link.qthang.net/windows-rdp/idm.exe > out.txt 2>&1
 curl -O https://link.qthang.net/windows-rdp/AirEx.exe > out.txt 2>&1
